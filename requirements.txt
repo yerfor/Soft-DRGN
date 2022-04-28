@@ -1,0 +1,11 @@
+numba==0.53.1
+pandas==1.3.1
+pygame==2.0.1 
+networkx
+scikit-opt==0.5.0
+tensorboard
+tensorboardX
+array2gif
+tqdm
+pyyaml
+opencv_python
