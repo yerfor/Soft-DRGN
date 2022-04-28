@@ -1,0 +1,32 @@
+# the path of algorithm class
+algorithm_path: agents.dqn.DQNAgent
+trainer_path: trainers.value_based_trainer.ValueBasedTrainer
+# Network Design
+hidden_dim: 256
+skip_connect: true
+
+# DL & RL hyper-params
+learning_rate: 0.001
+batch_size: 128
+buffer_capacity: 50000
+gamma: 0.95
+soft_update_target_network: false
+tau: 0.99
+
+# Training hyper-params
+training_action_mode: epsilon-greedy
+testing_action_mode: epsilon-greedy
+num_max_keep_ckpt: 5
+
+# epsilon-greedy
+burnin_episode: 1000
+initial_epsilon: 0.9
+min_epsilon: 0.3
+epsilon_linear_decay: false
+epsilon_decay_percent_episode: 0.00002
+epsilon_exponential_decay: true
+epsilon_decay_temperature: 0.0001
+
+
+
+

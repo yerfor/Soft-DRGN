@@ -1,0 +1,6 @@
+base_config:
+  - ./dgn.yaml
+
+# the path of algorithm class
+algorithm_path: agents.drgn.DRGNAgent
+trainer_path: trainers.value_based_trainer.ValueBasedTrainer

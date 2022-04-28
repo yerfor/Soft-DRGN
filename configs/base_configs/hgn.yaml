@@ -1,0 +1,6 @@
+base_config:
+  - ./dgn.yaml
+
+# the path of algorithm class
+algorithm_path: agents.hgn.HGNAgent
+trainer_path: trainers.hetero_value_based_trainer.HeteroValueBasedTrainer

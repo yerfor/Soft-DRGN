@@ -1,0 +1,5 @@
+base_config:
+  - ./env.yaml
+  - configs/base_configs/sac_dgn.yaml
+
+entropy_target_factor: 0.3

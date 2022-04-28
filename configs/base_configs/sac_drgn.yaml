@@ -1,0 +1,11 @@
+base_config:
+  - ./ac_drgn.yaml
+
+# the path of algorithm class
+algorithm_path: agents.sac_drgn.SoftActorCriticDRGNAgent
+trainer_path: trainers.soft_actor_critic_trainer.SoftActorCriticTrainer
+
+training_action_mode: epsilon-categorical
+testing_action_mode: epsilon-categorical
+
+entropy_target_factor: 0.3 # control the degree to exploration, should be tuned case-to-case.

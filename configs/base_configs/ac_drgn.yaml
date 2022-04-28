@@ -1,0 +1,13 @@
+base_config:
+  - ./drgn.yaml
+
+# the path of algorithm class
+algorithm_path: agents.ac_drgn.ActorCriticDRGNAgent
+trainer_path: trainers.actor_critic_trainer.ActorCriticTrainer
+
+# RL-related params
+soft_update_target_network: true
+tau: 0.99
+
+training_action_mode: epsilon-categorical
+testing_action_mode: epsilon-categorical

@@ -1,0 +1,11 @@
+base_config:
+  - ./dgn.yaml
+
+# the path of algorithm class
+algorithm_path: agents.sdgn.SoftDGNAgent
+trainer_path: trainers.soft_value_based_trainer.SoftValueBasedTrainer
+
+training_action_mode: epsilon-categorical
+testing_action_mode: epsilon-categorical
+
+entropy_target_factor: 0.3 # control the degree to exploration, should be tuned case-to-case.

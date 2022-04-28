@@ -1,0 +1,6 @@
+base_config:
+  - ./env.yaml
+  - configs/base_configs/hgn.yaml
+
+algorithm_path: agents.hetero_agents.HeteroValueBasedAgents
+sub_algorithm_path: agents.dgn.DGNAgent

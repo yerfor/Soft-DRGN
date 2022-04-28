@@ -1,0 +1,4 @@
+base_config:
+  - ./env.yaml
+  - configs/base_configs/ac_dgn.yaml
+batch_size: 128
